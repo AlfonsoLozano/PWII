@@ -14,7 +14,7 @@
 
 ## Description
 - This converter is a calculator-style app that starts with a sign-in page where you can: exit the program, go to the register page, or go to the recover a forgotten password page. The register page is where you can create a new account. In the recover a forgotten password page you can enter your username on the sign-in page, and if it's correct, you'll be able to reset your password. Ypu can enter the converter page whenyou sign in succesfully, the converter page is linked to a program that handles 5 types of conversions (binary, decimal, hexadecimal, octal and two's complement). There's also an operations page (inside the converter page) that displays the user information.
-
+![CalculatorDiagram](./Calculator/Resources/Images/CalculatorDiagram.png)
 
 ## Problems 
 - Compatibity issues of xcode with my mac.
