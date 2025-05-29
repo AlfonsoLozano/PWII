@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practical_Work_2.RegisterPage"
+             BackgroundColor="#181818">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+  
+        <Frame BackgroundColor="#222222" CornerRadius="12" Padding="12" HasShadow="False">
+            <Label Text="Register"
+                   HorizontalOptions="Center"
+                   FontSize="28"
+                   TextColor="#FFA500"
+                   FontAttributes="Bold"/>
+        </Frame>
+
+        <Frame BackgroundColor="#222222" CornerRadius="10" Padding="18" HasShadow="False">
+            <VerticalStackLayout Spacing="14" HorizontalOptions="CenterAndExpand">
+
+                <Label Text="Name" FontSize="18" TextColor="White"/>
+                <Entry x:Name="Name" Placeholder="Enter your name"
+                       BackgroundColor="#333333"
+                       TextColor="White"
+                       PlaceholderColor="#FFA500"
+                       WidthRequest="220"/>
+
+                <Label Text="Username" FontSize="18" TextColor="White"/>
+                <Entry x:Name="Username" Placeholder="Enter your username"
+                       BackgroundColor="#333333"
+                       TextColor="White"
+                       PlaceholderColor="#FFA500"
+                       WidthRequest="220"/>
+
+                <Label Text="Password" FontSize="18" TextColor="White"/>
+                <Entry x:Name="Password" Placeholder="Enter your password"
+                       BackgroundColor="#333333"
+                       TextColor="White"
+                       PlaceholderColor="#FFA500"
+                       WidthRequest="220"
+                       IsPassword="True"/>
+
+                <Label Text="Repeat Password" FontSize="18" TextColor="White"/>
+                <Entry x:Name="RepeatPassword" Placeholder="Repeat your password"
+                       BackgroundColor="#333333"
+                       TextColor="White"
+                       PlaceholderColor="#FFA500"
+                       WidthRequest="220"
+                       IsPassword="True"/>
+
+                <HorizontalStackLayout Spacing="8" VerticalOptions="Center">
+                    <CheckBox x:Name="PolicyCheckBox" Color="#FFA500"/>
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="I agree to the " TextColor="White"/>
+                                <Span Text="privacy policy"
+                                      TextColor="#FFA500"
+                                      TextDecorations="Underline">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="PrivacyPolicyTapped"/>
+                                    </Span.GestureRecognizers>
+                                </Span>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Frame>
+
+   
+        <Button Text="REGISTER"
+                BackgroundColor="#FFA500"
+                TextColor="Black"
+                FontAttributes="Bold"
+                CornerRadius="10"
+                Padding="12,6"
+                HorizontalOptions="Center"
+                WidthRequest="180"
+                Clicked="RegisterClicked"/>
+
+
+        <HorizontalStackLayout Spacing="12" HorizontalOptions="Center" Margin="0,16,0,0">
+            <Button Text="Sign in"
+                    BackgroundColor="#222222"
+                    TextColor="#FFA500"
+                    BorderColor="#FFA500"
+                    BorderWidth="1"
+                    CornerRadius="8"
+                    Clicked="SignInClicked"/>
+            <Button Text="Exit"
+                    BackgroundColor="#222222"
+                    TextColor="#FFA500"
+                    BorderColor="#FFA500"
+                    BorderWidth="1"
+                    CornerRadius="8"
+                    Clicked="ExitClicked"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

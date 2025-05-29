@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practical_Work_2.OperationsPage"
+             BackgroundColor="#181818">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <Frame BackgroundColor="#222222" CornerRadius="12" Padding="12" HasShadow="False">
+            <Label Text="Operations"
+                   HorizontalOptions="Center"
+                   FontSize="28"
+                   TextColor="#FFA500"
+                   FontAttributes="Bold"/>
+        </Frame>
+
+      
+        <Frame BackgroundColor="#222222" CornerRadius="10" Padding="18" HasShadow="False">
+            <VerticalStackLayout Spacing="10" HorizontalOptions="CenterAndExpand">
+                <Label x:Name="lblName" FontSize="20" TextColor="White"/>
+                <Label x:Name="lblUsername" FontSize="20" TextColor="White"/>
+                <Label x:Name="lblPassword" FontSize="20" TextColor="White"/>
+                <Label x:Name="lblOperations" FontSize="20" TextColor="#FFA500"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <HorizontalStackLayout Spacing="12" HorizontalOptions="Center" Margin="0,16,0,0">
+            <Button Text="Back"
+                    BackgroundColor="#222222"
+                    TextColor="#FFA500"
+                    BorderColor="#FFA500"
+                    BorderWidth="1"
+                    CornerRadius="8"
+                    Clicked="BackButtonClicked"/>
+            <Button Text="Exit"
+                    BackgroundColor="#222222"
+                    TextColor="#FFA500"
+                    BorderColor="#FFA500"
+                    BorderWidth="1"
+                    CornerRadius="8"
+                    Clicked="ExitButtonClicked"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

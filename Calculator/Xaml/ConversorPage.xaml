@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practical_Work_2.ConversorPage"
+             BackgroundColor="#181818">
+
+    <VerticalStackLayout Padding="20" Spacing="16">
+
+
+        <Frame BackgroundColor="#222222" CornerRadius="12" Padding="12" HasShadow="False">
+            <Label Text="OOP Converter"
+                   HorizontalOptions="Center"
+                   FontSize="28"
+                   TextColor="#FFA500"
+                   FontAttributes="Bold"/>
+        </Frame>
+
+
+        <Frame BackgroundColor="#222222" CornerRadius="10" Padding="10" HasShadow="False">
+            <Label x:Name="DisplayLabel"
+                   Text=""
+                   FontSize="28"
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
+        </Frame>
+
+        <Grid RowSpacing="8" ColumnSpacing="8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Button Text="7" Grid.Row="0" Grid.Column="0"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="7"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="8" Grid.Row="0" Grid.Column="1"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="8"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="9" Grid.Row="0" Grid.Column="2"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="9"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="Bin" Grid.Row="0" Grid.Column="3"
+                    Clicked="ConversionButtonClicked"
+                    CommandParameter="0"
+                    BackgroundColor="#FFA500"
+                    TextColor="Black"
+                    CornerRadius="8"/>
+
+   
+            <Button Text="4" Grid.Row="1" Grid.Column="0"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="4"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="5" Grid.Row="1" Grid.Column="1"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="5"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="6" Grid.Row="1" Grid.Column="2"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="6"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="2's Comp" Grid.Row="1" Grid.Column="3"
+                    Clicked="ConversionButtonClicked"
+                    CommandParameter="1"
+                    BackgroundColor="#FFA500"
+                    TextColor="Black"
+                    CornerRadius="8"/>
+
+
+            <Button Text="1" Grid.Row="2" Grid.Column="0"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="1"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="2" Grid.Row="2" Grid.Column="1"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="2"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="3" Grid.Row="2" Grid.Column="2"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="3"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="Oct" Grid.Row="2" Grid.Column="3"
+                    Clicked="ConversionButtonClicked"
+                    CommandParameter="2"
+                    BackgroundColor="#FFA500"
+                    TextColor="Black"
+                    CornerRadius="8"/>
+
+
+            <Button Text="AC" Grid.Row="3" Grid.Column="0"
+                    Clicked="AcClicked"
+                    BackgroundColor="#444444"
+                    TextColor="#FFA500"
+                    CornerRadius="8"/>
+            <Button Text="0" Grid.Row="3" Grid.Column="1"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="0"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="-" Grid.Row="3" Grid.Column="2"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="-"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="Hex" Grid.Row="3" Grid.Column="3"
+                    Clicked="ConversionButtonClicked"
+                    CommandParameter="3"
+                    BackgroundColor="#FFA500"
+                    TextColor="Black"
+                    CornerRadius="8"/>
+
+
+            <Button Text="A" Grid.Row="4" Grid.Column="0"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="A"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="B" Grid.Row="4" Grid.Column="1"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="B"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="C" Grid.Row="4" Grid.Column="2"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="C"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="Dec" Grid.Row="4" Grid.Column="3"
+                    Clicked="ConversionButtonClicked"
+                    CommandParameter="4"
+                    BackgroundColor="#FFA500"
+                    TextColor="Black"
+                    CornerRadius="8"/>
+
+
+            <Button Text="D" Grid.Row="5" Grid.Column="0"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="D"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="E" Grid.Row="5" Grid.Column="1"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="E"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="F" Grid.Row="5" Grid.Column="2"
+                    Clicked="NumberButtonClicked"
+                    CommandParameter="F"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    CornerRadius="8"/>
+            <Button Text="More" Grid.Row="5" Grid.Column="3"
+                    Clicked="OperationsClicked"
+                    BackgroundColor="#FFA500"
+                    TextColor="Black"
+                    CornerRadius="8"/>
+        </Grid>
+
+
+        <HorizontalStackLayout Spacing="12" HorizontalOptions="Center" Margin="0,16,0,0">
+            <Button Text="Logout"
+                    BackgroundColor="#222222"
+                    TextColor="#FFA500"
+                    BorderColor="#FFA500"
+                    BorderWidth="1"
+                    CornerRadius="8"
+                    Clicked="LogoutClicked"/>
+            <Button Text="Exit"
+                    BackgroundColor="#222222"
+                    TextColor="#FFA500"
+                    BorderColor="#FFA500"
+                    BorderWidth="1"
+                    CornerRadius="8"
+                    Clicked="ExitClicked"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

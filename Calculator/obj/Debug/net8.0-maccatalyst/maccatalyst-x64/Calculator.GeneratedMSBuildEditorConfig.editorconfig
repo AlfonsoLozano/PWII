@@ -1,0 +1,71 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Calculator
+build_property.ProjectDir = /Users/alfonsolozano/PW2/Calculator/Calculator/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[/Users/alfonsolozano/PW2/Calculator/Calculator/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Calculator.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/alfonsolozano/PW2/Calculator/Calculator/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Calculator.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/alfonsolozano/PW2/Calculator/Calculator/Xaml/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Calculator.Xaml.App.xaml
+build_metadata.AdditionalFiles.TargetPath = Xaml/App.xaml
+build_metadata.AdditionalFiles.RelativePath = Xaml/App.xaml
+
+[/Users/alfonsolozano/PW2/Calculator/Calculator/Xaml/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Calculator.Xaml.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = Xaml/AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = Xaml/AppShell.xaml
+
+[/Users/alfonsolozano/PW2/Calculator/Calculator/Xaml/ConversorPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Calculator.Xaml.ConversorPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Xaml/ConversorPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Xaml/ConversorPage.xaml
+
+[/Users/alfonsolozano/PW2/Calculator/Calculator/Xaml/ForgotPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Calculator.Xaml.ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Xaml/ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Xaml/ForgotPasswordPage.xaml
+
+[/Users/alfonsolozano/PW2/Calculator/Calculator/Xaml/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Calculator.Xaml.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Xaml/MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Xaml/MainPage.xaml
+
+[/Users/alfonsolozano/PW2/Calculator/Calculator/Xaml/OperationsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Calculator.Xaml.OperationsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Xaml/OperationsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Xaml/OperationsPage.xaml
+
+[/Users/alfonsolozano/PW2/Calculator/Calculator/Xaml/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Calculator.Xaml.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Xaml/RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Xaml/RegisterPage.xaml
