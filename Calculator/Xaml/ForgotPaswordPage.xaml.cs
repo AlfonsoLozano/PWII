@@ -30,7 +30,7 @@ namespace Practical_Work_2
         {
             if (NewPassword.IsVisible == false)
             {
-                var usuario = BuscarUsuario(Username.Text);
+                var usuario = BuscarUsuario(Name.Text,Username.Text);
 
                 if (usuario == null)
                 {
@@ -50,7 +50,14 @@ namespace Practical_Work_2
                     return;
                 }
 
-                var actualizado = CambiarPassword(Username.Text, NewPassword.Text);
+                var usuario = BuscarUsuario(Name.Text, Username.Text);
+                if (usuario == null)
+                {
+                    await DisplayAlert("Error", "User not found", "OK");
+                    return;
+                }
+
+                var actualizado = CambiarPassword(Name.Text, Username.Text, NewPassword.Text);
 
                 if (actualizado)
                 {
@@ -60,7 +67,7 @@ namespace Practical_Work_2
             }
         }
 
-        private User BuscarUsuario(string username)
+        private User BuscarUsuario(string name, string username)
         {
             if (!File.Exists(UsersFile))
             {
@@ -74,7 +81,7 @@ namespace Practical_Work_2
                 var datos = linea.Split(',');
                 if (datos.Length >= 2)
                 {
-                    if (datos[1] == username)
+                    if (datos[0] == name && datos[1] == username)
                     {
                         var user = new User();
                         user.Name = datos[0];
@@ -89,7 +96,7 @@ namespace Practical_Work_2
             return null;
         }
 
-        private bool CambiarPassword(string username, string nuevaPassword)
+        private bool CambiarPassword(string name, string username, string nuevaPassword)
         {
             try
             {
@@ -97,7 +104,7 @@ namespace Practical_Work_2
                 for (int i = 0; i < lineas.Length; i++)
                 {
                     var datos = lineas[i].Split(',');
-                    if (datos[1] == username)
+                    if (datos[0] == name && datos[1] == username)
                     {
                         datos[2] = nuevaPassword;
                         lineas[i] = string.Join(",", datos);
